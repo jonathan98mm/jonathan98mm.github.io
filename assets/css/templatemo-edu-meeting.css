@@ -892,7 +892,7 @@ upcoming meetings
 */
 
 section.upcoming-meetings {
-  background-image: url(../images/meetings-bg.jpg);
+  background-image: url(../images/PATRON.png);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1115,7 +1115,7 @@ courses
 */
 
 section.our-courses {
-  background-image: url(../images/meetings-bg.jpg);
+  background-image: url(../images/PATRON.png);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1267,7 +1267,7 @@ our facts
 */
 
 section.our-facts {
-  background-image: url(../images/facts-bg.jpg);
+  background-image: url(../images/PATRON.png);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1337,7 +1337,7 @@ contact us
 */
 
 section.contact-us {
-  background-image: url(../images/meetings-bg.jpg);
+  background-image: url(../images/PATRON.png);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1467,7 +1467,7 @@ heading page
 */
 
 section.heading-page {
-  background-image: url(../images/heading-bg.jpg);
+  background-image: url(../images/PATRON.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1503,7 +1503,7 @@ upcoming meetings page
 */
 
 section.meetings-page {
-  background-image: url(/assets/images/meetings-page-bg.jpg);
+  background-image: url(/assets/images/PATRON.png);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1580,7 +1580,7 @@ section.meetings-page .pagination ul li a:hover {
 
 .meeting-single-item .thumb {
   position: relative;
-  background-image: url(/assets/images/apply-bg.jpg);
+  background-image: url(/assets/images/NOSOTROS.png);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
