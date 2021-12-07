@@ -5417,7 +5417,7 @@ button.bg-dark:focus {
   background-color: transparent !important; }
 
 .border {
-  border: 1px solid #dee2e6 !important; }
+  border: 2px solid white !important; }
 
 .border-top {
   border-top: 1px solid #dee2e6 !important; }
@@ -8696,7 +8696,8 @@ h1, h2, h3, h4, h5,
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease; 
+  border: 2px solid black; }
   @media (max-width: 767.98px) {
     .services {
       margin-bottom: 40px; } }
@@ -8707,8 +8708,7 @@ h1, h2, h3, h4, h5,
     margin: 0 auto;
     width: 100px; }
     .services .icon span {
-      font-size: 60px;
-      color: #96bb7c; }
+      font-size: 60px; }
   .services .media-body {
     width: 100%;
     color: rgba(0, 0, 0, 0.8); }
@@ -9453,7 +9453,7 @@ textarea.form-control {
 .ftco-counter .text span {
   display: block;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.4);
+  color: white;
   margin-bottom: 10px;
   line-height: 1.4;
   padding-left: 15px;
@@ -9898,6 +9898,75 @@ textarea.form-control {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
+.shadowing{
+    box-shadow: 0;
+}
+
+.shadowing:hover{
+    box-shadow: 0px 0px 10px;
+}
+
+li.item-spaced:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.background {
+    width: 100%;
+}
+
+.heading-section .subtitle{
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.heading-section .subtitle::before{
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    content: '';
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: white;
+}
+
+.heading-section .subtitle::after{
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    content: '';
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: white;
+}
+.background-fixed{
+    position: relative;
+    background-image: url(/images/work-2.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.delimiter{
+    width: 100%;
+    padding: 10px 0;
+}
+
 .js-scroll {
   opacity: 0;
   transition: opacity 500ms;
@@ -9932,7 +10001,7 @@ textarea.form-control {
 
 @keyframes slide-in-right {
     0% {
-        transform: translateX(100px);
+        transform: translateX(250px);
         opacity: 0;
     }
     100% {
