@@ -9013,7 +9013,7 @@ textarea.form-control {
   font-size: 18px;
   display: inline-block;
   margin-bottom: 0;
-  color: #96bb7c;
+  color: rgb(61, 42, 91);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -9030,7 +9030,7 @@ textarea.form-control {
     width: 50px;
     height: 1px;
     margin-top: -1px;
-    background: #96bb7c; }
+    background: rgb(61, 42, 91); }
   .heading-section .subheading:before {
     position: absolute;
     top: 50%;
@@ -9042,7 +9042,7 @@ textarea.form-control {
     width: 50px;
     height: 1px;
     margin-top: -1px;
-    background: #96bb7c; }
+    background: rgb(61, 42, 91); }
 
 .heading-section h2 {
   font-size: 60px;
@@ -9111,7 +9111,7 @@ textarea.form-control {
           content: '';
           width: 150px;
           height: 1px;
-          background: #000000;
+          background: rgb(61, 42, 91);
           -moz-transition: all 0.3s ease;
           -o-transition: all 0.3s ease;
           -webkit-transition: all 0.3s ease;
@@ -10001,7 +10001,8 @@ li.item-spaced:not(:last-child){
     left: -1.4em;
     top: 50%;
     margin-top: -1.3em;
-    background: #87ceeb;
+    background: rgb(61, 42, 91);
+    color: #FFFFFF;
     height: 2.5em;
     width: 2.5em;
     line-height: 2em;
