@@ -56,7 +56,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: rgb(61, 42, 91);
   text-align: left;
   background-color: #fff; }
 
@@ -8037,7 +8037,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #121416 !important; }
 
 .text-body {
-  color: #212529 !important; }
+  color: rgb(61, 42, 91) !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -8139,7 +8139,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  color: #666666; }
+  color: rgb(61, 42, 91); }
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -8159,7 +8159,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgb(61, 42, 91);
   font-weight: 400; }
 
 .text-primary {
@@ -8193,7 +8193,7 @@ h1, h2, h3, h4, h5,
     padding-bottom: .9rem;
     padding-left: 20px;
     padding-right: 20px;
-    color: #000000;
+    color: rgb(61, 42, 91);
     font-weight: 600;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
@@ -8320,7 +8320,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light.scrolled .nav-link {
       padding-top: 0.9rem !important;
       padding-bottom: 0.9rem !important;
-      color: #000000 !important; }
+      color: rgb(61, 42, 91) !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
         color: #96bb7c !important; }
     .ftco-navbar-light.scrolled.awake {
@@ -8412,7 +8412,7 @@ h1, h2, h3, h4, h5,
     color: #000000; }
   .slider-text p {
     line-height: 1.5;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(61, 42, 91, 0.8);
     margin-bottom: 20px; }
   .slider-text .breadcrumbs {
     font-size: 14px;
@@ -8697,7 +8697,7 @@ h1, h2, h3, h4, h5,
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease; 
-  border: 2px solid black; }
+  border: 2px solid rgb(61, 42, 91); }
   @media (max-width: 767.98px) {
     .services {
       margin-bottom: 40px; } }
@@ -8711,11 +8711,11 @@ h1, h2, h3, h4, h5,
       font-size: 60px; }
   .services .media-body {
     width: 100%;
-    color: rgba(0, 0, 0, 0.8); }
+    color: rgb(61, 42, 91); }
     .services .media-body h3 {
       font-size: 20px;
       font-weight: 600;
-      color: #000000; }
+      color: rgb(61, 42, 91); }
     .services .media-body p {
       margin-bottom: 0; }
   .services.services-bg {
@@ -9980,7 +9980,7 @@ li.item-spaced:not(:last-child){
     padding: .4em .4em .4em 2em;
     margin: .5em 0;
     background: #ddd;
-    color: #444;
+    color: rgb(61, 42, 91);
     text-decoration: none;
     border-radius: .3em;
     transition: all .3s ease-out;   
@@ -10031,6 +10031,10 @@ li.item-spaced:not(:last-child){
 
 .scrolled.slide-right {
     animation: slide-in-right 1s ease-in-out both;
+}
+
+.text-purple{
+    color: rgb(61, 42, 91) !important;
 }
 
 @keyframes slide-in-left {
