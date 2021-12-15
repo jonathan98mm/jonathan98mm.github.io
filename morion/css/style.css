@@ -9955,7 +9955,7 @@ li.item-spaced:not(:last-child){
 }
 .background-fixed{
     position: relative;
-    background-image: url(/images/image_5.jpg);
+    background-image: url(./images/image_5.jpg);
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
