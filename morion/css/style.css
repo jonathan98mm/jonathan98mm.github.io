@@ -10001,7 +10001,7 @@ li.item-spaced:not(:last-child){
     left: -1.4em;
     top: 50%;
     margin-top: -1.3em;
-    background: rgb(61, 42, 91);
+    background: #000000;
     color: #FFFFFF;
     height: 2.5em;
     width: 2.5em;
