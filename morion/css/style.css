@@ -58,7 +58,8 @@ body {
   line-height: 1.5;
   color: rgb(61, 42, 91);
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow-x: hidden; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -8159,7 +8160,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: rgb(61, 42, 91);
+  color: #FFFFFF;
   font-weight: 400; }
 
 .text-primary {
@@ -8193,7 +8194,7 @@ h1, h2, h3, h4, h5,
     padding-bottom: .9rem;
     padding-left: 20px;
     padding-right: 20px;
-    color: rgb(61, 42, 91);
+    color: #FFFFFF;
     font-weight: 600;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
@@ -8260,7 +8261,7 @@ h1, h2, h3, h4, h5,
     border: none;
     color: rgba(255, 255, 255, 0.5) !important;
     cursor: pointer;
-    padding-right: 0;
+    padding-right: 20px;
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: .1em; }
@@ -8313,7 +8314,7 @@ h1, h2, h3, h4, h5,
       color: rgba(0, 0, 0, 0.5) !important;
       border-color: rgba(0, 0, 0, 0.5) !important;
       cursor: pointer;
-      padding-right: 0;
+      padding-right: 20px;
       text-transform: uppercase;
       font-size: 16px;
       letter-spacing: .1em; }
@@ -8412,7 +8413,7 @@ h1, h2, h3, h4, h5,
     color: #000000; }
   .slider-text p {
     line-height: 1.5;
-    color: rgba(61, 42, 91, 0.8);
+    color: #FFFFFF;
     margin-bottom: 20px; }
   .slider-text .breadcrumbs {
     font-size: 14px;
@@ -8608,9 +8609,9 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #96bb7c !important;
-    border: 1px solid #96bb7c !important;
-    color: #fff !important; }
+    background: linear-gradient(#A95, #FEA) !important;
+    border: 1px solid #A95 !important;
+    color: #000000 !important; }
     .btn.btn-primary:hover {
       border: 1px solid #96bb7c;
       background: transparent;
@@ -10035,6 +10036,11 @@ li.item-spaced:not(:last-child){
 
 .text-purple{
     color: rgb(61, 42, 91) !important;
+}
+
+#header-img{
+    width: 200px;
+    height: 75px;
 }
 
 @keyframes slide-in-left {

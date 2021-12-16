@@ -115,6 +115,7 @@
 			if ( st > 350 ) {
 				if ( !navbar.hasClass('awake') ) {
 					navbar.addClass('awake');	
+                    document.getElementById("header-img").src = "./images/LOGO_COLOR.png";
 				}
 				
 				if(sd.length > 0) {
@@ -125,6 +126,7 @@
 				if ( navbar.hasClass('awake') ) {
 					navbar.removeClass('awake');
 					navbar.addClass('sleep');
+                    document.getElementById("header-img").src = "./images/LOGO MORION.png";
 				}
 				if(sd.length > 0) {
 					sd.removeClass('sleep');
