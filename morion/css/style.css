@@ -8899,7 +8899,7 @@ textarea.form-control {
     .ftco-footer .ftco-footer-widget ul li a {
       color: rgba(255, 255, 255, 0.5); }
       .ftco-footer .ftco-footer-widget ul li a span {
-        color: rgba(255, 255, 255, 0.5);
+        color: #FFFFFF;
         font-size: 14px; }
   .ftco-footer .ftco-footer-widget .btn-primary {
     background: #fff !important;
@@ -8908,7 +8908,7 @@ textarea.form-control {
       background: #fff;
       border: 2px solid #fff !important; }
   .ftco-footer p {
-    color: rgba(255, 255, 255, 0.7); }
+    color: #FFFFFF; }
   .ftco-footer a {
     color: #96bb7c; }
     .ftco-footer a:hover {
@@ -9112,7 +9112,7 @@ textarea.form-control {
           content: '';
           width: 150px;
           height: 2px;
-          background: rgb(61, 42, 91);
+          background: #A95;
           -moz-transition: all 0.3s ease;
           -o-transition: all 0.3s ease;
           -webkit-transition: all 0.3s ease;
@@ -9526,7 +9526,7 @@ textarea.form-control {
       line-height: 1.5;
       margin-bottom: 15px; }
     .block-23 ul li span {
-      color: rgba(255, 255, 255, 0.5); }
+      color: #FFFFFF; }
     .block-23 ul li .icon, .block-23 ul li .text {
       display: table-cell;
       vertical-align: top; }
@@ -9929,7 +9929,7 @@ li.item-spaced:not(:last-child){
 
 .heading-section .subtitle::before{
     position: absolute;
-    top: 50%;
+    top: 75%;
     right: -60px;
     content: '';
     -webkit-transform: translateY(-50%);
@@ -9943,7 +9943,7 @@ li.item-spaced:not(:last-child){
 
 .heading-section .subtitle::after{
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: -60px;
     content: '';
     -webkit-transform: translateY(-50%);
@@ -10050,7 +10050,7 @@ li.item-spaced:not(:last-child){
     content: '';
     width: 150px;
     height: 2px;
-    background: rgb(61, 42, 91);
+    background: #A95;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
