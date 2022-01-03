@@ -289,22 +289,22 @@
     window.addEventListener("scroll", (event) => {
         let scroll = window.scrollY;
         console.log(scroll);
-        var section = document.getElementById("Inicio");
-        var text = document.getElementById("Texto");
+        var background = document.querySelector(".zoom-image-head-bg");
+        var text = document.querySelector(".zoom-image-head-bg-2");
 
         if(scroll < 100){
-            section.style.opacity = 1;
+            background.style.opacity = 1;
             text.style.opacity = 1;
         }else{
-            section.style.opacity = (1 - (scroll - 100)/500);
+            background.style.opacity = (1 - (scroll - 100)/500);
             text.style.opacity = (1 - (scroll - 100) / 500);
         }
 
         if(scroll > 0){
-            section.style.transform = "translate(" + ((scroll / 2000) * (-1)) + "%," + ((scroll / 1500) * (-1)) + "%) matrix(" + (1 + (scroll / 3000)) + ",0,0," + (1 + (scroll / 3000)) + ",0,0)";
-            text.style.transform = "translate(" + ((scroll / 1000)) + "%," + ((scroll / 750)) + "%) matrix(" + (1 + (scroll / 3000)) + ",0,0," + (1 + (scroll / 3000)) + ",0,0)";
+            background.style.transform = "translate(" + ((scroll / 750) * (-1)) + "%," + ((scroll / 187.5) * (-1)) + "%) matrix(" + (1 + (scroll / 3000)) + ",0,0," + (1 + (scroll / 3000)) + ",0,0)";
+            text.style.transform = "translate(" + ((scroll / 500)) + "%," + ((scroll / 125)) + "%) matrix(" + (1 + (scroll / 3000)) + ",0,0," + (1 + (scroll / 3000)) + ",0,0)";
         }else{
-            section.style.transform = "matrix(1,0,0,1,0,0)";
+            background.style.transform = "matrix(1,0,0,1,0,0)";
             text.style.transform = "matrix(1,0,0,1,0,0)";
         }
 
