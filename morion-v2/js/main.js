@@ -289,8 +289,9 @@
     window.addEventListener("scroll", (event) => {
         let scroll = window.scrollY;
         console.log(scroll);
-        var background = document.querySelector(".zoom-image-head-bg");
-        var text = document.querySelector(".zoom-image-head-bg-2");
+        var background = document.getElementById("Back");
+        var text = document.getElementById("Text");
+        var elem = document.querySelector(".zoom-image-head-body");
 
         if(scroll < 100){
             background.style.opacity = 1;
@@ -298,6 +299,12 @@
         }else{
             background.style.opacity = (1 - (scroll - 100)/500);
             text.style.opacity = (1 - (scroll - 100) / 500);
+        }
+
+        if(background.style.opacity < 0){
+            elem.style.display = "none";
+        }else{
+            elem.style.display = "block";
         }
 
         if(scroll > 0){
