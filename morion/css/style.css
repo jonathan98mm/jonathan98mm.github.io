@@ -10073,6 +10073,51 @@ li.item-spaced:not(:last-child){
     width: 200px; 
 }
 
+.zoom-image-head{
+    margin-bottom: 400px;
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+.zoom-image-head-body{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.zoom-image-head-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.zoom-image-head-bg-inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.zoom-image-head-bg-2{
+    position: absolute;
+    bottom: 40%;
+    left: 12%;
+    width: 100%;
+    z-index: 2;
+}
+
 @keyframes slide-in-left {
   0% {
     transform: translateX(-100px);
