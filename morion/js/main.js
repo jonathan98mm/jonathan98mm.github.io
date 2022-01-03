@@ -308,8 +308,8 @@
         }
 
         if (scroll > 0) {
-            background.style.transform = "translate(" + ((scroll / 750) * (-1)) + "%," + ((scroll / 187.5) * (-1)) + "%) matrix(" + (1 + (scroll / 3000)) + ",0,0," + (1 + (scroll / 3000)) + ",0,0)";
-            text.style.transform = "translate(" + ((scroll / 500)) + "%," + ((scroll / 125)) + "%) matrix(" + (1 + (scroll / 3000)) + ",0,0," + (1 + (scroll / 3000)) + ",0,0)";
+            background.style.transform = "translate(" + ((scroll / 250) * (-1)) + "%," + ((scroll / 62.5) * (-1)) + "%) matrix(" + (1 + (scroll / 3000)) + ",0,0," + (1 + (scroll / 3000)) + ",0,0)";
+            text.style.transform = "translate(" + ((scroll / 50)) + "%," + ((scroll / 12)) + "%) matrix(" + (1 + (scroll / 3000)) + ",0,0," + (1 + (scroll / 3000)) + ",0,0)";
         } else {
             background.style.transform = "matrix(1,0,0,1,0,0)";
             text.style.transform = "matrix(1,0,0,1,0,0)";
