@@ -319,10 +319,20 @@
     window.addEventListener("resize", function (){
         var widthView = window.innerWidth;
 
-        if(widthView > 425 && widthView <= 768){
-            var nosotros = document.querySelector(".col-lg-5.wrap-about.py-md-5.js-scroll.slide-right-1s");
+        console.log("Ancho: " + widthView);
+
+        if (widthView <= 425) {
+            var nosotros = document.getElementById("us-container");
             var rectangle = document.getElementsByClassName("rectangle")[0];
-            var filosofia = document.querySelector(".offset-md-4.col-md-4.ftco-animate.mb-3");
+
+            nosotros.classList.replace("slide-right-1s", "slide-right");
+            rectangle.style.display = "none";
+        }
+
+        if(widthView > 425 && widthView <= 768){
+            var nosotros = document.getElementById("us-container");
+            var rectangle = document.getElementsByClassName("rectangle")[0];
+            var filosofia = document.getElementById("filosofy-container");
 
             nosotros.classList.replace("slide-right-1s", "slide-right");
             filosofia.classList.replace("offset-md-4", "offset-md-3");
@@ -331,8 +341,13 @@
         }
 
         if(widthView > 768){
+            var nosotros = document.getElementById("us-container");
             var rectangle = document.getElementsByClassName("rectangle")[0];
+            var filosofia = document.getElementById("filosofy-container");
 
+            nosotros.classList.replace("slide-right", "slide-right-1s");
+            filosofia.classList.replace("offset-md-3", "offset-md-4");
+            filosofia.classList.replace("col-md-6", "col-md-4")
             rectangle.style.display = "block";
         }
     })
