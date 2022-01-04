@@ -56,7 +56,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: rgb(61, 42, 91);
+  color: #FFFFFF;
   text-align: left;
   background-color: #fff;
   overflow-x: hidden; }
@@ -8038,7 +8038,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #121416 !important; }
 
 .text-body {
-  color: rgb(61, 42, 91) !important; }
+  color: #FFFFFF !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -8140,7 +8140,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  color: rgb(61, 42, 91); }
+  color: #FFFFFF; }
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -8698,7 +8698,7 @@ h1, h2, h3, h4, h5,
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease; 
-  border: 2px solid rgb(61, 42, 91); }
+  border: 2px solid #FFFFFF; }
   @media (max-width: 767.98px) {
     .services {
       margin-bottom: 40px; } }
@@ -8712,11 +8712,11 @@ h1, h2, h3, h4, h5,
       font-size: 60px; }
   .services .media-body {
     width: 100%;
-    color: rgb(61, 42, 91); }
+    color: #FFFFFF; }
     .services .media-body h3 {
       font-size: 20px;
       font-weight: 600;
-      color: rgb(61, 42, 91); }
+      color: #FFFFFF; }
     .services .media-body p {
       margin-bottom: 0; }
   .services.services-bg {
@@ -9014,7 +9014,7 @@ textarea.form-control {
   font-size: 18px;
   display: inline-block;
   margin-bottom: 0;
-  color: rgb(61, 42, 91);
+  color: #FFFFFF;
   font-size: 25px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -9031,7 +9031,7 @@ textarea.form-control {
     width: 50px;
     height: 1px;
     margin-top: -1px;
-    background: rgb(61, 42, 91); }
+    background: #FFFFFF; }
   .heading-section .subheading:before {
     position: absolute;
     top: 50%;
@@ -9043,7 +9043,7 @@ textarea.form-control {
     width: 50px;
     height: 1px;
     margin-top: -1px;
-    background: rgb(61, 42, 91); }
+    background: #FFFFFF; }
 
 .heading-section h2 {
   font-size: 60px;
@@ -9979,15 +9979,15 @@ li.item-spaced:not(:last-child){
     display: block;
     padding: .4em .4em .4em 2em;
     margin: .5em 0;
-    background: #ddd;
-    color: rgb(61, 42, 91);
+    background: #ABABAB;
+    color: #FFFFFF;
     text-decoration: none;
     border-radius: .3em;
     transition: all .3s ease-out;   
 }
 
 #services-list li:hover{
-    background: #eee;
+    background: #646569;
 }
 
 #services-list li:hover:before{
@@ -10001,7 +10001,7 @@ li.item-spaced:not(:last-child){
     left: -1.4em;
     top: 50%;
     margin-top: -1.3em;
-    background: #000000;
+    background: #A95;
     color: #FFFFFF;
     height: 2.5em;
     width: 2.5em;
@@ -10034,6 +10034,14 @@ li.item-spaced:not(:last-child){
     animation: slide-in-right 1s ease-in-out both;
 }
 
+.scrolled.slide-right-1s {
+    animation: slide-in-right 0.5s ease-in-out 1s both;
+}
+
+.scrolled.reduce-right {
+    animation: reduce-to-right 1s ease-in-out both;
+}
+
 .text-purple{
     color: rgb(61, 42, 91) !important;
 }
@@ -10043,7 +10051,7 @@ li.item-spaced:not(:last-child){
     height: 75px;
 }
 
-.heading-section.pr-md-5:after {
+/*.heading-section.pr-md-5:after {
     position: absolute;
     top: 50px;
     right: -73px;
@@ -10056,7 +10064,7 @@ li.item-spaced:not(:last-child){
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-}
+}*/
 
 @media (max-width: 767.98px) {
     .heading-section.pr-md-5:after {
@@ -10114,8 +10122,17 @@ li.item-spaced:not(:last-child){
     position: absolute;
     bottom: 40%;
     left: 12%;
-    width: 100%;
+    width: 89%;
     z-index: 2;
+}
+
+.rectangle{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 900px;
+    height: 310px;
+    background-color: #A95;
 }
 
 @keyframes slide-in-left {
@@ -10147,6 +10164,17 @@ li.item-spaced:not(:last-child){
     }
     100% {
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes reduce-to-right {
+    0%{
+        opacity: 0;
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0.7);
         opacity: 1;
     }
 }

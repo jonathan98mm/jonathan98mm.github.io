@@ -316,5 +316,26 @@
         }
     });
 
+    window.addEventListener("resize", function (){
+        var widthView = window.innerWidth;
+
+        if(widthView > 425 && widthView <= 768){
+            var nosotros = document.querySelector(".col-lg-5.wrap-about.py-md-5.js-scroll.slide-right-1s");
+            var rectangle = document.getElementsByClassName("rectangle")[0];
+            var filosofia = document.querySelector(".offset-md-4.col-md-4.ftco-animate.mb-3");
+
+            nosotros.classList.replace("slide-right-1s", "slide-right");
+            filosofia.classList.replace("offset-md-4", "offset-md-3");
+            filosofia.classList.replace("col-md-4", "col-md-6")
+            rectangle.style.display = "none";
+        }
+
+        if(widthView > 768){
+            var rectangle = document.getElementsByClassName("rectangle")[0];
+
+            rectangle.style.display = "block";
+        }
+    })
+
 })(jQuery);
 
