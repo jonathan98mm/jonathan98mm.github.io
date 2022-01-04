@@ -10051,6 +10051,10 @@ li.item-spaced:not(:last-child){
     height: 75px;
 }
 
+.ftco-heading-2 > img {
+    
+}
+
 /*.heading-section.pr-md-5:after {
     position: absolute;
     top: 50px;

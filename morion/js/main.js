@@ -324,6 +324,7 @@
         if (widthView <= 425) {
             var nosotros = document.getElementById("us-container");
             var rectangle = document.getElementsByClassName("rectangle")[0];
+            var filosofia = document.getElementById("filosofy-container");
 
             nosotros.classList.replace("slide-right-1s", "slide-right");
             rectangle.style.display = "none";
