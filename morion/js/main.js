@@ -329,6 +329,7 @@
             var value = document.getElementById("value-container");
 
             nosotros.classList.replace("slide-right-1s", "slide-right");
+            value.classList.replace("slide-left-1s", "slide-left");
             rectangle.style.display = "none";
             rect_bg.style.display = "none";
             rect_val.style.display = "none";
@@ -381,6 +382,7 @@
             var value = document.getElementById("value-container");
 
             nosotros.classList.replace("slide-right-1s", "slide-right");
+            value.classList.replace("slide-left-1s", "slide-left");
             rectangle.style.display = "none";
             rect_bg.style.display = "none";
             rect_val.style.display = "none";
