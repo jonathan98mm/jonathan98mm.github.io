@@ -324,13 +324,18 @@
             var rectangle = document.getElementsByClassName("rectangle")[0];
             var rect_bg = document.getElementsByClassName("rectangle-no-bg")[0];
             var filosofia = document.getElementById("filosofy-container");
+            var rect_val = document.getElementsByClassName("rectangle-value")[0];
+            var rect_val_bg = document.getElementsByClassName("rectangle-value-no-bg")[0];
+            var value = document.getElementById("value-container");
 
             nosotros.classList.replace("slide-right-1s", "slide-right");
             rectangle.style.display = "none";
             rect_bg.style.display = "none";
+            rect_val.style.display = "none";
+            rect_val_bg.style.display = "none";
         }
 
-        if(widthView > 425 && widthView <= 768){
+        if (widthView > 425 && widthView <= 768) {
             var nosotros = document.getElementById("us-container");
             var rectangle = document.getElementsByClassName("rectangle")[0];
             var rect_bg = document.getElementsByClassName("rectangle-no-bg")[0];
@@ -349,7 +354,7 @@
             rect_val_bg.style.display = "none";
         }
 
-        if(widthView > 768){
+        if (widthView > 768) {
             var nosotros = document.getElementById("us-container");
             var rectangle = document.getElementsByClassName("rectangle")[0];
             var rect_bg = document.getElementsByClassName("rectangle-no-bg")[0];
@@ -371,10 +376,15 @@
             var rectangle = document.getElementsByClassName("rectangle")[0];
             var rect_bg = document.getElementsByClassName("rectangle-no-bg")[0];
             var filosofia = document.getElementById("filosofy-container");
+            var rect_val = document.getElementsByClassName("rectangle-value")[0];
+            var rect_val_bg = document.getElementsByClassName("rectangle-value-no-bg")[0];
+            var value = document.getElementById("value-container");
 
             nosotros.classList.replace("slide-right-1s", "slide-right");
             rectangle.style.display = "none";
             rect_bg.style.display = "none";
+            rect_val.style.display = "none";
+            rect_val_bg.style.display = "none";
         }
 
         if (widthView > 425 && widthView <= 768) {
