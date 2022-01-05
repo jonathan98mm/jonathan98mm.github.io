@@ -319,8 +319,6 @@
     window.addEventListener("resize", function (){
         var widthView = window.innerWidth;
 
-        console.log("Ancho: " + widthView);
-
         if (widthView <= 425) {
             var nosotros = document.getElementById("us-container");
             var rectangle = document.getElementsByClassName("rectangle")[0];

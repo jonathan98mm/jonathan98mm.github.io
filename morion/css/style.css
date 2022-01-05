@@ -10083,7 +10083,7 @@ li.item-spaced:not(:last-child){
     left: 0px;
     content: '';
     width: 510px;
-    height: 2px;
+    height: 3px;
     background: #FFFFFF;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -10164,18 +10164,18 @@ li.item-spaced:not(:last-child){
 .rectangle-value {
     position: absolute;
     top: 10%;
-    right: 50%;
-    width: 1100px;
-    height: 310px;
+    right: 36%;
+    width: 1300px;
+    height: 500px;
     background-color: #A95;
 }
 
 .rectangle-value-no-bg {
     position: absolute;
-    top: 7%;
-    right: 50%;
-    width: 1056px;
-    height: 333px;
+    top: 5%;
+    right: 34.5%;
+    width: 1300px;
+    height: 535px;
     background-color: transparent;
     border: 2px solid #FFFFFF;
     box-shadow: 0px;
@@ -10185,10 +10185,10 @@ li.item-spaced:not(:last-child){
 
 .rectangle-no-bg{
     position: absolute;
-    top: 7%;
-    left: 13%;
-    width: 910px;
-    height: 333px;
+    top: 6%;
+    left: 11%;
+    width: 960px;
+    height: 345px;
     background-color: transparent;
     border: 2px solid #FFFFFF;
     box-shadow: 0px;
