@@ -9105,27 +9105,6 @@ textarea.form-control {
         margin-bottom: 30px; }
       .portfolio-wrap .text .desc .top {
         position: relative; }
-        .portfolio-wrap .text .desc .top:after {
-          position: absolute;
-          top: -30px;
-          left: -150px;
-          content: '';
-          width: 150px;
-          height: 2px;
-          background: #A95;
-          -moz-transition: all 0.3s ease;
-          -o-transition: all 0.3s ease;
-          -webkit-transition: all 0.3s ease;
-          -ms-transition: all 0.3s ease;
-          transition: all 0.3s ease; }
-        @media (max-width: 767.98px) {
-          .portfolio-wrap .text .desc .top:after {
-            display: none; } }
-      .portfolio-wrap .text .desc.text-md-right .top:after {
-        right: -150px;
-        margin: 0 0 0 auto; }
-      .portfolio-wrap .text .desc:hover .top:after {
-        width: 200px; }
 
 .block-7 {
   border-radius: 4px;
@@ -10026,6 +10005,10 @@ li.item-spaced:not(:last-child){
   animation: slide-in-left 1s ease-in-out both;
 }
 
+.scrolled.slide-left-1s {
+    animation: slide-in-left 0.5s ease-in-out 1s both;
+}
+
 .scrolled.slide-top {
   animation: slide-in-top 1s ease-in-out both;
 }
@@ -10042,6 +10025,10 @@ li.item-spaced:not(:last-child){
     animation: reduce-to-right 1s ease-in-out both;
 }
 
+.scrolled.reduce-left {
+    animation: reduce-to-left 1s ease-in-out both;
+}
+
 .text-purple{
     color: rgb(61, 42, 91) !important;
 }
@@ -10052,23 +10039,28 @@ li.item-spaced:not(:last-child){
 }
 
 .ftco-heading-2 > img {
-    
+    width: 300px;
+    height: 120px;
 }
 
-/*.heading-section.pr-md-5:after {
+@media (max-width: 320px){
+    .ftco-heading-2 > img {
+        width: 250px;
+        height: 100px;
+    }
+}
+
+.heading-section.pr-md-5:after {
     position: absolute;
-    top: 50px;
-    right: -73px;
+    top: 125px;
+    left: 18px;
     content: '';
-    width: 150px;
+    width: 239px;
     height: 2px;
-    background: #A95;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
+    background: #FFFFFF;
+    box-shadow: 0px;
     transition: all 0.3s ease;
-}*/
+}
 
 @media (max-width: 767.98px) {
     .heading-section.pr-md-5:after {
@@ -10082,7 +10074,37 @@ li.item-spaced:not(:last-child){
 }*/
 
 .line:hover.heading-section.pr-md-5:after { 
-    width: 200px; 
+     box-shadow: 0px 0px 10px;
+}
+
+.portfolio-wrap .text .desc .top:after {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    content: '';
+    width: 510px;
+    height: 2px;
+    background: #FFFFFF;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+    .portfolio-wrap .text .desc .top:after {
+        display: none;
+    }
+}
+
+.portfolio-wrap .text .desc.text-md-right .top:after {
+    right: -150px;
+    margin: 0 0 0 auto;
+}
+      
+.portfolio-wrap .text .desc:hover .top:after {
+    box-shadow: 0px 0px 10px;
 }
 
 .zoom-image-head{
@@ -10139,6 +10161,54 @@ li.item-spaced:not(:last-child){
     background-color: #A95;
 }
 
+.rectangle-value {
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    width: 1100px;
+    height: 310px;
+    background-color: #A95;
+}
+
+.rectangle-value-no-bg {
+    position: absolute;
+    top: 7%;
+    right: 50%;
+    width: 1056px;
+    height: 333px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px;
+    z-index: 2;
+    transition: box-shadow 0.3s ease;
+}
+
+.rectangle-no-bg{
+    position: absolute;
+    top: 7%;
+    left: 13%;
+    width: 910px;
+    height: 333px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px;
+    z-index: 2;
+    transition: box-shadow 0.3s ease;
+}
+
+.rectangle-no-bg:hover {
+    box-shadow: 0px 0px 10px;
+}
+
+.rectangle-value-no-bg:hover {
+    box-shadow: 0px 0px 10px;
+}
+
+.border {
+    border: 2px solid #FFFFFF;
+    transition: all 0.3s ease;
+}
+
 @keyframes slide-in-left {
   0% {
     transform: translateX(-100px);
@@ -10179,6 +10249,17 @@ li.item-spaced:not(:last-child){
     }
     100% {
         transform: scaleX(0.7);
+        opacity: 1;
+    }
+}
+
+@keyframes reduce-to-left {
+    0%{
+        opacity: 0;
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0.5);
         opacity: 1;
     }
 }

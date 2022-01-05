@@ -324,32 +324,38 @@
         if (widthView <= 425) {
             var nosotros = document.getElementById("us-container");
             var rectangle = document.getElementsByClassName("rectangle")[0];
+            var rect_bg = document.getElementsByClassName("rectangle-no-bg")[0];
             var filosofia = document.getElementById("filosofy-container");
 
             nosotros.classList.replace("slide-right-1s", "slide-right");
             rectangle.style.display = "none";
+            rect_bg.style.display = "none";
         }
 
         if(widthView > 425 && widthView <= 768){
             var nosotros = document.getElementById("us-container");
             var rectangle = document.getElementsByClassName("rectangle")[0];
+            var rect_bg = document.getElementsByClassName("rectangle-no-bg")[0];
             var filosofia = document.getElementById("filosofy-container");
 
             nosotros.classList.replace("slide-right-1s", "slide-right");
             filosofia.classList.replace("offset-md-4", "offset-md-3");
             filosofia.classList.replace("col-md-4", "col-md-6")
             rectangle.style.display = "none";
+            rect_bg.style.display = "none";
         }
 
         if(widthView > 768){
             var nosotros = document.getElementById("us-container");
             var rectangle = document.getElementsByClassName("rectangle")[0];
+            var rect_bg = document.getElementsByClassName("rectangle-no-bg")[0];
             var filosofia = document.getElementById("filosofy-container");
 
             nosotros.classList.replace("slide-right", "slide-right-1s");
             filosofia.classList.replace("offset-md-3", "offset-md-4");
             filosofia.classList.replace("col-md-6", "col-md-4")
             rectangle.style.display = "block";
+            rect_bg.style.display = "block";
         }
     })
 
