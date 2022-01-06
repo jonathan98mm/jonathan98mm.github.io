@@ -8321,7 +8321,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light.scrolled .nav-link {
       padding-top: 0.9rem !important;
       padding-bottom: 0.9rem !important;
-      color: rgb(61, 42, 91) !important; }
+      color: #0d0e18 !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
         color: #96bb7c !important; }
     .ftco-navbar-light.scrolled.awake {
@@ -10157,15 +10157,15 @@ li.item-spaced:not(:last-child){
     top: 10%;
     left: 15%;
     width: 900px;
-    height: 310px;
+    height: 355px;
     background-color: #A95;
 }
 
 .rectangle-value {
     position: absolute;
     top: 10%;
-    right: 36%;
-    width: 1300px;
+    right: 28%;
+    width: 1400px;
     height: 500px;
     background-color: #A95;
 }
@@ -10173,8 +10173,8 @@ li.item-spaced:not(:last-child){
 .rectangle-value-no-bg {
     position: absolute;
     top: 5%;
-    right: 34.5%;
-    width: 1300px;
+    right: 26.5%;
+    width: 1400px;
     height: 535px;
     background-color: transparent;
     border: 2px solid #FFFFFF;
@@ -10188,7 +10188,7 @@ li.item-spaced:not(:last-child){
     top: 6%;
     left: 11%;
     width: 960px;
-    height: 345px;
+    height: 390px;
     background-color: transparent;
     border: 2px solid #FFFFFF;
     box-shadow: 0px;
