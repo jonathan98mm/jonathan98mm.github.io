@@ -360,6 +360,8 @@
             var nosotros = document.getElementById("us-container");
             var rectangle = document.getElementsByClassName("rectangle")[0];
             var rect_bg = document.getElementsByClassName("rectangle-no-bg")[0];
+            var rect_val = document.getElementsByClassName("rectangle-value")[0];
+            var rect_val_bg = document.getElementsByClassName("rectangle-value-no-bg")[0];
             var filosofia = document.getElementById("filosofy-container");
 
             nosotros.classList.replace("slide-right", "slide-right-1s");

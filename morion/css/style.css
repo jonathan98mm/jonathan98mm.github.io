@@ -10148,7 +10148,7 @@ li.item-spaced:not(:last-child){
     position: absolute;
     bottom: 40%;
     left: 12%;
-    width: 89%;
+    width: 86%;
     z-index: 2;
 }
 
