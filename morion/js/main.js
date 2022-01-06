@@ -288,7 +288,7 @@
 
     window.addEventListener("scroll", (event) => {
         let scroll = window.scrollY;
-        console.log(scroll);
+        
         var background = document.getElementById("Back");
         var text = document.getElementById("Text");
         var elem = document.querySelector(".zoom-image-head-body");
@@ -319,6 +319,7 @@
     window.addEventListener("resize", function (){
         var widthView = window.innerWidth;
 
+        console.log("Ancho: " + widthView);
         if (widthView <= 425) {
             var nosotros = document.getElementById("us-container");
             var rectangle = document.getElementsByClassName("rectangle")[0];
@@ -366,6 +367,8 @@
             filosofia.classList.replace("col-md-6", "col-md-4")
             rectangle.style.display = "block";
             rect_bg.style.display = "block";
+            rect_val.style.display = "block";
+            rect_val_bg.style.display = "block";
         }
     });
 
@@ -419,6 +422,8 @@
             filosofia.classList.replace("col-md-6", "col-md-4")
             rectangle.style.display = "block";
             rect_bg.style.display = "block";
+            rect_val.style.display = "block";
+            rect_val_bg.style.display = "block";
         }
     });
 
