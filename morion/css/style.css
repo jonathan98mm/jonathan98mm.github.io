@@ -10209,6 +10209,15 @@ li.item-spaced:not(:last-child){
     transition: all 0.3s ease;
 }
 
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
 @keyframes slide-in-left {
   0% {
     transform: translateX(-100px);
