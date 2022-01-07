@@ -469,10 +469,12 @@ pre {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
+  padding-right: 30px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto; 
+  line-height: 25px;
+}
 
 .row {
   display: -webkit-box;
@@ -3597,7 +3599,7 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0; } }
 
-@media (min-width: 992px) {
+@media (min-width: 2000px) {
   .navbar-expand-lg {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3605,7 +3607,7 @@ input[type="button"].btn-block {
     flex-flow: row nowrap;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    justify-content: flex-start; }
+    justify-content: flex-end; }
     .navbar-expand-lg .navbar-nav {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -8884,7 +8886,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   padding: 7em 0 4em;
-  background: #0f101c; }
+  background: #0d0e18; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }
@@ -10155,19 +10157,25 @@ li.item-spaced:not(:last-child){
 .rectangle{
     position: absolute;
     top: 10%;
-    left: 15%;
-    width: 900px;
+    left: 13.5%;
+    width: 975px;
     height: 355px;
-    background-color: #A95;
+    background-image: url("/images/nosotros.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .rectangle-value {
     position: absolute;
     top: 10%;
-    right: 28%;
-    width: 1400px;
+    right: 24.5%;
+    width: 1550px;
     height: 500px;
-    background-color: #A95;
+    background-image: url("/images/valor.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .rectangle-value-no-bg {
@@ -10207,6 +10215,11 @@ li.item-spaced:not(:last-child){
 .border {
     border: 2px solid #FFFFFF;
     transition: all 0.3s ease;
+}
+
+.unit-4-icon.mr-4 > img {
+    width: 50px;
+    height: 50px;
 }
 
 video {
