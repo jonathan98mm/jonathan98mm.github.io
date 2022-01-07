@@ -10142,6 +10142,8 @@ li.item-spaced:not(:last-child){
     height: 100%;
     left: 0;
     top: 0;
+    background-image: url("/images/inicio.jpg");
+    background-position: center;
     background-size: cover;
     background-position: 50%;
 }
@@ -10163,7 +10165,7 @@ li.item-spaced:not(:last-child){
     background-image: url("/images/nosotros.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .rectangle-value {
@@ -10175,7 +10177,7 @@ li.item-spaced:not(:last-child){
     background-image: url("/images/valor.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .rectangle-value-no-bg {
