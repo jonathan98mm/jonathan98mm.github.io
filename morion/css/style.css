@@ -10168,6 +10168,20 @@ li.item-spaced:not(:last-child){
     background-size: cover;
 }
 
+@media (max-width: 1025px){
+    .rectangle{
+        position: absolute;
+        top: 10%;
+        left: -28.5%;
+        width: 950px;
+        height: 355px;
+        background-image: url("/images/nosotros.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 .rectangle-value {
     position: absolute;
     top: 10%;
@@ -10178,6 +10192,20 @@ li.item-spaced:not(:last-child){
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (max-width: 1025px){
+    .rectangle-value {
+        position: absolute;
+        top: 10%;
+        right: 23%;
+        width: 1130px;
+        height: 500px;
+        background-image: url("/images/valor.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .rectangle-value-no-bg {
@@ -10193,6 +10221,21 @@ li.item-spaced:not(:last-child){
     transition: box-shadow 0.3s ease;
 }
 
+@media (max-width: 1025px){
+    .rectangle-value-no-bg {
+        position: absolute;
+        top: 6%;
+        right: 13.5%;
+        width: 1400px;
+        height: 540px;
+        background-color: transparent;
+        border: 2px solid #FFFFFF;
+        box-shadow: 0px;
+        z-index: 2;
+        transition: box-shadow 0.3s ease;
+    }
+}
+
 .rectangle-no-bg{
     position: absolute;
     top: 6%;
@@ -10204,6 +10247,21 @@ li.item-spaced:not(:last-child){
     box-shadow: 0px;
     z-index: 2;
     transition: box-shadow 0.3s ease;
+}
+
+@media (max-width: 1025px){
+    .rectangle-no-bg{
+        position: absolute;
+        top: 6%;
+        left: -32%;
+        width: 960px;
+        height: 390px;
+        background-color: transparent;
+        border: 2px solid #FFFFFF;
+        box-shadow: 0px;
+        z-index: 2;
+        transition: box-shadow 0.3s ease;
+    }
 }
 
 .rectangle-no-bg:hover {
