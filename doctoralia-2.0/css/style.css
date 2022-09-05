@@ -1571,6 +1571,10 @@ pre {
   -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
+
+.form-control > option {
+    background-color: #007bff;
+}
   @media screen and (prefers-reduced-motion: reduce) {
     .form-control {
       -webkit-transition: none;
@@ -7775,9 +7779,8 @@ h1, h2, h3, h4, h5,
       -ms-border-radius: 0;
       border-radius: 0;
       border: none;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-      padding-left: 0;
-      padding-right: 0 !important; }
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      }
   .ftco-intro .appointment-form .icon {
     position: absolute;
     top: 50% !important;
