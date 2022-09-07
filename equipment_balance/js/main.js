@@ -1,6 +1,33 @@
 (function ($) {
     "use strict";
 
+    var docReady = function docReady(fn) {
+        // see if DOM is already available
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            setTimeout(fn, 1);
+        }
+    };
+
+    var cursorInit = function cursorInit() {
+        var cursor = document.querySelector('.cursor-outer');
+        var targets = document.querySelectorAll(['a', '.btn', "[type='button']", 'input', 'textarea']);
+        document.addEventListener('mousemove', function (e) {
+            cursor.style.transform = "translate3d(calc(".concat(e.clientX, "px - 50%), calc(").concat(e.clientY, "px - 50%), 0)");
+        });
+        targets.forEach(function (item) {
+            item.addEventListener('mouseover', function () {
+                cursor.classList.add('link-hover');
+            });
+            item.addEventListener('mouseleave', function () {
+                cursor.classList.remove('link-hover');
+            });
+        });
+    };
+
+    docReady(cursorInit);
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
