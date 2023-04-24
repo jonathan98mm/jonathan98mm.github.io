@@ -1,0 +1,665 @@
+@font-face {
+    font-family: "Evermore";
+    src: url(../fonts/Evermore.ttf);
+    src: url(../fonts/Evermore.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Evermore";
+    src: url(../fonts/Evermore-Italic.ttf);
+    src: url(../fonts/Evermore-Italic.otf) format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cocogoose Classic";
+    src: url(../fonts/Cocogoose-Classic-Medium-trial.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cocogoose Classic";
+    src: url(../fonts/Cocogoose-Classic-ExtraBold-trial.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Champagne & Limousines";
+    src: url(../fonts/Champagne-Limousines.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Champagne & Limousines";
+    src: url(../fonts/Champagne-Limousines-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Champagne & Limousines";
+    src: url(../fonts/Champagne-Limousines-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Champagne & Limousines";
+    src: url(../fonts/Champagne-Limousines-Bold-Italic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+body{
+    background-color: white;
+}
+
+:root{
+    --blue-bioser: #233976;
+    --green-bioser: #2EA838;
+    --gray-bioser: #A7AAAF;
+    --evermore-font: "Evermore", Arial, sans-serif;
+    --cocogoose-font: "Cocogoose Classic", Arial, sans-serif;
+    --champagne-font: "Champagne & Limousines", Arial, sans-serif;
+}
+
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.icon-green{
+    color: var(--green-bioser);
+}
+
+.icon-blue{
+    color: var(--blue-bioser);
+}
+
+.icon-gray{
+    color: var(--gray-bioser);
+}
+
+/*** Navbar ***/
+.nav-bar {
+    position: relative;
+    margin-top: 45px;
+    padding: 0 3rem;
+    transition: .5s;
+    z-index: 9999;
+    font-family: var(--evermore-font);
+}
+
+.nav-bar.sticky-top {
+    position: sticky;
+    padding: 0;
+    z-index: 9999;
+}
+
+.navbar {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: var(--evermore-font);
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: .5s;
+}
+
+.navbar .dropdown-toggle[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--blue-bioser);
+}
+
+@media (max-width: 991.98px) {
+    .nav-bar {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+.navbar-light .navbar-brand {
+    height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--green-bioser);
+    font-weight: 500;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        top: 100%;
+        margin-top: 0;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+/** Carousel **/
+.intro-container{
+    margin-top: -120px;
+}
+
+/** Nosotros **/
+.section-2 {
+    padding: 10rem 0 !important;
+}
+
+@media (max-width: 991.98px) {
+    .section-2 {
+        padding: 3rem 0 !important;
+    }
+}
+
+.section .heading {
+    font-size: 46px;
+    color: #343661;
+    font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+    .section .heading {
+        font-size: 30px;
+    }
+}
+
+.image-stack {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.image-stack img {
+    width: 100%;
+    display: block;
+    border: 10px;
+}
+
+.image-stack__item--bottom {
+    position: absolute;
+    right: 10%;
+    top: -49%;
+    width: 65%;
+    z-index: -1;
+}
+
+.image-stack__item--bottom img {
+    border: 10px solid #fff;
+}
+
+.image-stack__item--top {
+    padding-top: 20px;
+    padding-right: 30%;
+    width: 70%;
+}
+
+.image-stack__item--top img {
+    border: 10px solid #fff;
+    -webkit-box-shadow: 0 15px 30px -18px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px -18px rgba(0, 0, 0, 0.2);
+}
+
+.btn-us {
+    color: #FFFFFF;
+    background-color: var(--green-bioser);
+    border-color: var(--green-bioser);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.btn-us:hover {
+    color: #fff;
+    background-color: #37cc43;
+    border-color: #37cc43;
+}
+
+.btn-us:focus,
+.btn-us:active {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/** Servicios **/
+#Servicios{
+    background-color: var(--blue-bioser);
+}
+
+@media (min-width: 992px) {
+    .container.feature {
+        max-width: 100% !important;
+    }
+
+    .feature-text {
+        padding-left: calc(((100% - 960px) / 2) + .75rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .feature-text {
+        padding-left: calc(((100% - 1140px) / 2) + .75rem);
+    }
+}
+
+@media (min-width: 1400px) {
+    .feature-text {
+        padding-left: calc(((100% - 1320px) / 2) + .75rem);
+    }
+}
+
+/** Contacto **/
+.li-space-lg li {
+    margin-bottom: 0.375rem;
+}
+
+.light-gray{
+    text-decoration: underline;
+}
+
+.form-3 {
+    padding-top: 6.125rem;
+    padding-bottom: 5.125rem;
+    background-color: var(--green-bioser);
+}
+
+.form-3 .text-container {
+    margin-bottom: 3rem;
+}
+
+.form-3 h2 {
+    margin-bottom: 1.125rem;
+}
+
+.form-3 p {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.form-3 h3 {
+    margin-bottom: 0.875rem;
+}
+
+.form-3 .list-unstyled,
+.form-3 .list-unstyled a {
+    color: #333;
+}
+
+.form-3 .list-unstyled .fas {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+.form-3 .list-unstyled .media-body {
+    margin-left: 0.75rem;
+}
+
+.form-3 .list-unstyled .media-body .fas.fa-globe {
+    margin-left: 1.125rem;
+    margin-right: 0.75rem;
+}
+
+.form-3 .form-control-input,
+.form-3 .form-control-textarea {
+    border: 1px solid var(--blue-bioser);
+    background-color: var(--gray-bioser);
+}
+
+.form-3 .form-control-input:hover,
+.form-3 .form-control-textarea:hover {
+    border: 1px solid var(--gray-bioser);
+}
+
+.form-3 .help-block,
+.form-3 .checkbox,
+.form-3 .checkbox a {
+    color: #333;
+}
+
+.form-3 .form-control-submit-button {
+    border: 0.125rem solid var(--blue-bioser);
+    background-color: transparent;
+}
+
+.form-3 .form-control-submit-button:hover {
+    border: 0.125rem solid var(--gray-bioser);
+    background-color: var(--gray-bioser);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.form-group.has-error.has-danger {
+    margin-bottom: 0.625rem;
+}
+
+.form-group.has-error.has-danger .help-block.with-errors ul {
+    margin-top: 0.375rem;
+}
+
+.label-control {
+    position: absolute;
+    top: 0.87rem;
+    left: 1.375rem;
+    color: #555;
+    opacity: 1;
+    font: 400 0.875rem/1.375rem "Montserrat", sans-serif;
+    cursor: text;
+    transition: all 0.2s ease;
+}
+
+/* IE10+ hack to solve lower label text position compared to the rest of the browsers */
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+    .label-control {
+        top: 0.9375rem;
+    }
+}
+
+.form-control-input:focus+.label-control,
+.form-control-input.notEmpty+.label-control,
+.form-control-textarea:focus+.label-control,
+.form-control-textarea.notEmpty+.label-control {
+    top: 0.125rem;
+    opacity: 1;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.form-control-input,
+.form-control-select {
+    display: block;
+    /* needed for proper display of the label in Firefox, IE, Edge */
+    width: 100%;
+    padding-top: 1.0625rem;
+    padding-bottom: 0.0625rem;
+    padding-left: 1.3125rem;
+    border: 1px solid #c4d8dc;
+    border-radius: 0.25rem;
+    background-color: var(--gray-bioser);
+    color: #555;
+    font: 400 0.875rem/1.875rem "Montserrat", sans-serif;
+    transition: all 0.2s;
+    -webkit-appearance: none;
+    /* removes inner shadow on form inputs on ios safari */
+}
+
+.form-control-select {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 3rem;
+}
+
+/* IE10+ hack to solve lower label text position compared to the rest of the browsers */
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+    .form-control-input {
+        padding-top: 1.25rem;
+        padding-bottom: 0.75rem;
+        line-height: 1.75rem;
+    }
+
+    .form-control-select {
+        padding-top: 0.875rem;
+        padding-bottom: 0.75rem;
+        height: 3.125rem;
+        line-height: 2.125rem;
+    }
+}
+
+select {
+    /* you should keep these first rules in place to maintain cross-browser behavior */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url('../images/down-arrow.png');
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+    /* removes the ugly default down arrow on select form field in IE11 */
+}
+
+.form-control-textarea {
+    display: block;
+    /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+    width: 100%;
+    height: 8rem;
+    /* used instead of html rows to normalize height between Chrome and IE/FF */
+    padding-top: 1.25rem;
+    padding-left: 1.3125rem;
+    border: 1px solid #c4d8dc;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    color: #555;
+    font: 400 0.875rem/1.75rem "Montserrat", sans-serif;
+    transition: all 0.2s;
+}
+
+.form-control-input:focus,
+.form-control-select:focus,
+.form-control-textarea:focus {
+    border: 1px solid #a1a1a1;
+    outline: none;
+    /* Removes blue border on focus */
+}
+
+.form-control-input:hover,
+.form-control-select:hover,
+.form-control-textarea:hover {
+    border: 1px solid #a1a1a1;
+}
+
+.checkbox {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+input[type='checkbox'] {
+    vertical-align: -15%;
+    margin-right: 0.375rem;
+}
+
+/* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+    input[type='checkbox'] {
+        vertical-align: -9%;
+    }
+}
+
+.form-control-submit-button {
+    display: inline-block;
+    width: 100%;
+    height: 3.125rem;
+    border: 0.125rem solid #ffbd50;
+    border-radius: 1.5rem;
+    background-color: #ffbd50;
+    color: #333;
+    font: 600 0.875rem/0 "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.form-control-submit-button:hover {
+    border: 0.125rem solid #333;
+    background-color: transparent;
+    color: #333;
+}
+
+/* Form Success And Error Message Formatting */
+#rmsgSubmit.h3.text-center.tada.animated,
+#nmsgSubmit.h3.text-center.tada.animated,
+#cmsgSubmit.h3.text-center.tada.animated,
+#pmsgSubmit.h3.text-center.tada.animated,
+#rmsgSubmit.h3.text-center,
+#nmsgSubmit.h3.text-center,
+#cmsgSubmit.h3.text-center,
+#pmsgSubmit.h3.text-center {
+    display: block;
+    margin-bottom: 0;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1rem;
+}
+
+.help-block.with-errors .list-unstyled {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    text-align: left;
+}
+
+.help-block.with-errors ul {
+    margin-bottom: 0;
+}
+
+/* end of form success and error message formatting */
+
+/* Form Success And Error Message Animation - Animate.css */
+@-webkit-keyframes tada {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes tada {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* end of form success and error message animation - Animate.css */
