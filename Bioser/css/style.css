@@ -271,7 +271,12 @@ body{
 }
 
 /** Servicios **/
+
 #Servicios{
+    padding-top: 100px;
+}
+
+.container.feature{
     background-color: var(--blue-bioser);
 }
 
