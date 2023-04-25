@@ -34,7 +34,7 @@
                 <div class="navbar-nav ms-auto">
                     <a href="#" class="nav-item nav-link active">Inicio</a>
                     <a href="#Nosotros" class="nav-item nav-link">Nosotros</a>
-                    <a href="#Colaboradores" class="nav-item nav-link">Colaboradores</a>
+                    <!-- <a href="#Colaboradores" class="nav-item nav-link">Colaboradores</a> -->
                     <a href="#Servicios" class="nav-item nav-link">Servicios</a>
                     <a href="#Contacto" class="nav-item nav-link">Contacto</a>
                 </div>
@@ -54,13 +54,13 @@
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="5000">
                     <img src="images/header.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="5000">
                     <img src="images/header.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="5000">
                     <img src="images/header.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
@@ -107,9 +107,6 @@
                             supplies it with the necessary regelialia. It is a paradisematic country, in which roasted
                             parts
                             of sentences fly into your mouth.</p>
-
-                        <p class="my-4" data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn-us">Read
-                                more</a></p>
                     </div>
                 </div>
             </div>
@@ -123,7 +120,9 @@
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 feature-text py-5">
                     <div class="p-lg-5 ps-lg-0">
-                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">Servicios</p>
+                        <div style="height: 70px; width: 50%; border-bottom: 2px solid white; margin-bottom: 20px;">
+                            <h1 style="color: white; font-size: 50px;">Servicios</h1>
+                        </div>
                         <h1 class="text-white mb-4">¿Porqué elegirnos?</h1>
                         <p class="text-white mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
                             Aliqu
@@ -194,36 +193,39 @@
     <!-- Servicios Final -->
 
     <!-- Contacto -->
-    <div id="contact" class="form-3">
+    <div id="Contacto" class="form-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <div class="text-container">
                         <h2>Contact Details</h2>
-                        <p>For registration questions please get in touch using the contact details below. For any questions
+                        <p>For registration questions please get in touch using the contact details below. For any
+                            questions
                             use the form.</p>
                         <h3>Main Office Location</h3>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <div class="media-body">22 Innovative, San Francisco, CA 94043, US</div>
+                                <div class="media-body">Calle Damas # 36, Colonia San José Insurgentes, C.P: 03900,
+                                    Alcaldía Benito Juárez, Ciudad de México.</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-mobile-alt"></i>
-                                <div class="media-body">+44 68 554 332, &nbsp;&nbsp;<i class="fas fa-mobile-alt"></i>&nbsp;
+                                <div class="media-body">+44 68 554 332, &nbsp;&nbsp;<i
+                                        class="fas fa-mobile-alt"></i>&nbsp;
                                     +44 31 276 112</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-envelope"></i>
                                 <div class="media-body"><a class="light-gray"
-                                        href="mailto:contact@zigo.com">contact@zigo.com</a>&nbsp;&nbsp;<i class="fas fa-globe"></i><a
-                                        class="light-gray" href="#your-link" style="padding-left: 10px;">www.zigo.com</a></div>
+                                        href="mailto:contact@zigo.com">contact@zigo.com</a>&nbsp;&nbsp;<i
+                                        class="fas fa-globe"></i><a class="light-gray" href="#your-link"
+                                        style="padding-left: 10px;">www.zigo.com</a></div>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-6">
-    
+                <div class="col-lg-5 offset-3">
                     <!-- Contact Form -->
                     <form id="contactForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
@@ -258,6 +260,12 @@
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
+        <div class="container d-flex justify-content-center align-items-center"
+            style="border-top: 1px solid black; height: 50px;">
+            <p style="margin-top: 20px;">&copy; Copyright <strong>Bioser</strong>
+                <script>document.write(new Date().getFullYear())</script> All Rights Reserved
+            </p>
+        </div>
     </div> <!-- end of form-3 -->
     <!-- end of contacto -->
 

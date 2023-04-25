@@ -19,6 +19,15 @@
     };
     spinner();
 
+    /* Move Form Fields Label When User Types */
+    // for input and textarea fields
+    $("input, textarea").keyup(function () {
+        if ($(this).val() != '') {
+            $(this).addClass('notEmpty');
+        } else {
+            $(this).removeClass('notEmpty');
+        }
+    });
 
     // Sticky Navbar
     $(window).scroll(function () {
