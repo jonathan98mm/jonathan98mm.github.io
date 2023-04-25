@@ -188,6 +188,9 @@ body{
 
 /** Nosotros **/
 .section-2 {
+    font-family: var(--champagne-font);
+    font-size: 18px;
+    font-weight: bold;
     padding: 10rem 0 !important;
 }
 
@@ -198,9 +201,10 @@ body{
 }
 
 .section .heading {
+    font-family: var(--champagne-font);
     font-size: 46px;
     color: #343661;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 @media (max-width: 991.98px) {
@@ -245,35 +249,30 @@ body{
     box-shadow: 0 15px 30px -18px rgba(0, 0, 0, 0.2);
 }
 
-.btn-us {
-    color: #FFFFFF;
-    background-color: var(--green-bioser);
-    border-color: var(--green-bioser);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 30px;
-    font-size: 15px;
-}
-
-.btn-us:hover {
-    color: #fff;
-    background-color: #37cc43;
-    border-color: #37cc43;
-}
-
-.btn-us:focus,
-.btn-us:active {
-    outline: none;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}
-
 /** Servicios **/
-
 #Servicios{
+    font-family: var(--champagne-font);
+    font-size: 18px;
     padding-top: 100px;
+}
+
+#Servicios h5{
+    font-family: var(--champagne-font);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.services-title{
+    height: 70px;
+    width: 50%;
+    border-bottom: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.services-title > h1{
+    color: white;
+    font-family: var(--champagne-font);
+    font-size: 50px;
 }
 
 .container.feature{
@@ -322,21 +321,29 @@ body{
 }
 
 .form-3 h2 {
+    font-family: var(--champagne-font);
     margin-bottom: 1.125rem;
+    color: white;
 }
 
 .form-3 p {
-    color: var(--blue-bioser);
+    font-family: var(--champagne-font);
+    font-size: 20px;
+    color: white;
     margin-bottom: 2rem;
 }
 
 .form-3 h3 {
+    font-family: var(--champagne-font);
     margin-bottom: 0.875rem;
+    color: white;
 }
 
 .form-3 .list-unstyled,
 .form-3 .list-unstyled a {
-    color: var(--blue-bioser);
+    font-family: var(--champagne-font);
+    font-size: 20px;
+    color: white;
 }
 
 .form-3 .list-unstyled .fas {
@@ -356,7 +363,7 @@ body{
 
 .form-3 .form-control-input,
 .form-3 .form-control-textarea {
-    border: 1px solid var(--blue-bioser);
+    border: 1px solid white;
     background-color: white;
 }
 
@@ -368,7 +375,7 @@ body{
 .form-3 .help-block,
 .form-3 .checkbox,
 .form-3 .checkbox a {
-    color: var(--blue-bioser);
+    color: white;
 }
 
 .form-3 .form-control-submit-button {
@@ -401,7 +408,7 @@ body{
     left: 1.375rem;
     color: var(--blue-bioser);
     opacity: 1;
-    font: 400 0.875rem/1.375rem "Montserrat", sans-serif;
+    font: bold 0.875rem/1.375rem var(--champagne-font), sans-serif;
     cursor: text;
     transition: all 0.2s ease;
 }
@@ -433,10 +440,10 @@ screen and (-ms-high-contrast: none) {
     padding-bottom: 0.0625rem;
     padding-left: 1.3125rem;
     border: 1px solid #c4d8dc;
-    border-radius: 0.25rem;
+    border-radius: 25px;
     background-color: white;
     color: var(--blue-bioser);
-    font: 400 0.875rem/1.875rem "Montserrat", sans-serif;
+    font: 400 0.875rem/1.875rem var(--champagne-font), sans-serif;
     transition: all 0.2s;
     -webkit-appearance: none;
     /* removes inner shadow on form inputs on ios safari */
@@ -492,7 +499,7 @@ select::-ms-expand {
     padding-top: 1.25rem;
     padding-left: 1.3125rem;
     border: 1px solid #c4d8dc;
-    border-radius: 0.25rem;
+    border-radius: 25px;
     background-color:white;
     color: var(--blue-bioser);
     font: 400 0.875rem/1.75rem "Montserrat", sans-serif;
@@ -502,7 +509,7 @@ select::-ms-expand {
 .form-control-input:focus,
 .form-control-select:focus,
 .form-control-textarea:focus {
-    border: 1px solid var(--blue-bioser);
+    border: 1px solid white;
     outline: none;
     /* Removes blue border on focus */
 }
@@ -514,7 +521,8 @@ select::-ms-expand {
 }
 
 .checkbox {
-    font-size: 0.75rem;
+    font-family: var(--champagne-font);
+    font-size: 17px;
     line-height: 1.25rem;
 }
 
@@ -539,7 +547,7 @@ screen and (-ms-high-contrast: none) {
     border-radius: 1.5rem;
     background-color: #ffbd50;
     color: #333;
-    font: 600 0.875rem/0 "Montserrat", sans-serif;
+    font: 600 0.875rem/0 var(--champagne-font), sans-serif;
     cursor: pointer;
     transition: all 0.2s;
 }
