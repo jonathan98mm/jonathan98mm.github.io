@@ -183,7 +183,7 @@ body{
 
 /** Carousel **/
 #carousel{
-    margin-top: -145px;
+    margin-top: -150px;
     width: 100%;
     height: 100vh;
 }
@@ -264,6 +264,17 @@ body{
     height: 60px;
     border-left: 7px solid var(--green-bioser);
     border-bottom: 7px solid var(--green-bioser);
+}
+
+.image-stack__item--top::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 165px;
+    width: 60px;
+    height: 60px;
+    border-right: 7px solid var(--blue-bioser);
+    border-top: 7px solid var(--blue-bioser);
 }
 
 .image-stack__item--top img {
@@ -431,7 +442,7 @@ body{
     left: 1.375rem;
     color: var(--blue-bioser);
     opacity: 1;
-    font: bold 0.875rem/1.375rem var(--champagne-font), sans-serif;
+    font: bold 15px/1.375rem var(--champagne-font), sans-serif;
     cursor: text;
     transition: all 0.2s ease;
 }
@@ -543,17 +554,6 @@ select::-ms-expand {
     border: 1px solid var(--blue-bioser);
 }
 
-.checkbox {
-    font-family: var(--champagne-font);
-    font-size: 17px;
-    line-height: 1.25rem;
-}
-
-input[type='checkbox'] {
-    vertical-align: -15%;
-    margin-right: 0.375rem;
-}
-
 /* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active),
 screen and (-ms-high-contrast: none) {
@@ -570,7 +570,7 @@ screen and (-ms-high-contrast: none) {
     border-radius: 1.5rem;
     background-color: #ffbd50;
     color: #333;
-    font: 600 0.875rem/0 var(--champagne-font), sans-serif;
+    font: bold 20px/0 var(--champagne-font), sans-serif;
     cursor: pointer;
     transition: all 0.2s;
 }
