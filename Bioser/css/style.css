@@ -182,8 +182,14 @@ body{
 }
 
 /** Carousel **/
-.intro-container{
-    margin-top: -150px;
+#carousel{
+    margin-top: -145px;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-item > img{
+    height: 100vh;
 }
 
 /** Nosotros **/
@@ -192,6 +198,12 @@ body{
     font-size: 18px;
     font-weight: bold;
     padding: 10rem 0 !important;
+}
+
+.container-us > h2{
+    padding-bottom: 5px;
+    border-bottom: 5px solid var(--green-bioser);
+    width: 250px;
 }
 
 @media (max-width: 991.98px) {
@@ -203,7 +215,7 @@ body{
 .section .heading {
     font-family: var(--champagne-font);
     font-size: 46px;
-    color: #343661;
+    color: var(--green-bioser);
     font-weight: bold;
 }
 
@@ -243,6 +255,17 @@ body{
     width: 70%;
 }
 
+.image-stack__item--top::before{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: -25px;
+    width: 60px;
+    height: 60px;
+    border-left: 7px solid var(--green-bioser);
+    border-bottom: 7px solid var(--green-bioser);
+}
+
 .image-stack__item--top img {
     border: 10px solid #fff;
     -webkit-box-shadow: 0 15px 30px -18px rgba(0, 0, 0, 0.2);
@@ -265,7 +288,7 @@ body{
 .services-title{
     height: 70px;
     width: 50%;
-    border-bottom: 3px solid white;
+    border-bottom: 5px solid white;
     margin-bottom: 20px;
 }
 
