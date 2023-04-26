@@ -240,7 +240,7 @@ body{
 .image-stack__item--bottom {
     position: absolute;
     right: 10%;
-    top: -49%;
+    top: -40%;
     width: 65%;
     z-index: -1;
 }
@@ -480,6 +480,7 @@ screen and (-ms-high-contrast: none) {
     font: 400 0.875rem/1.875rem var(--champagne-font), sans-serif;
     transition: all 0.2s;
     -webkit-appearance: none;
+    appearance: none;
     /* removes inner shadow on form inputs on ios safari */
 }
 
