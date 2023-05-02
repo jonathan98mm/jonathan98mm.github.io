@@ -1597,6 +1597,10 @@ section {
   margin-bottom: 30px;
 }
 
+.footer .footer-content .footer-info img{
+    height: 75px;
+}
+
 .footer .footer-content .footer-info h3 {
   font-size: 28px;
   margin: 0 0 20px 0;
