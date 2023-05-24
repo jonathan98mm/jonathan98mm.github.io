@@ -38,10 +38,8 @@
     };
     spinner();
     
-    
     // Initiate the wowjs
     new WOW().init();
-
 
     // Sticky Navbar
     $(window).scroll(function () {
@@ -51,7 +49,6 @@
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
-    
     
     // Back to top button
     $(window).scroll(function () {
@@ -66,13 +63,11 @@
         return false;
     });
 
-
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 2000
     });
-
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -87,7 +82,6 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
-
     
 })(jQuery);
 
