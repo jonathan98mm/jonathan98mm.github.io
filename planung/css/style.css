@@ -181,11 +181,27 @@ nav{
     display: flex;
     flex-direction: column;
     border-top: 1px solid black;
+    padding: 50px 50px;
 }
 
 .Servicios__Principal{
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    
+    padding: 20px 0;
 }
+
+.Principal__Proyectos{
+    flex-basis: 33.33%;
+    padding: 0 25px 0 0;
+}
+
+.Principal__Supervision{
+    flex-basis: 33.33%;
+    padding: 0 25px 0 25px;
+}
+
+.Principal__Construccion{
+    flex-basis: 33.33%;
+    padding: 0 0 0 25px;
+}
+
