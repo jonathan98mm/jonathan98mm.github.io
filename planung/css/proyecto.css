@@ -1,0 +1,145 @@
+*{
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    font-size: 17px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+#Inicio{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    background-image: url("../images/footer-bg.webp");
+    background-size: cover;
+}
+
+.Inicio__Texto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Principal{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 0 0 20px 0;
+}
+
+.Principal__Descripcion1{
+    padding: 50px 0 0 50px;
+}
+
+.Principal__Descripcion1 > p{
+    text-align: justify;
+}
+
+.Principal__Galeria{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Galeria__Imagenes{
+    width: 90%;
+    height: 70%;
+}
+
+.Galeria__Imagenes > img{
+    width: 100%;
+    height: 100%;
+}
+
+.Galeria__Controles{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Controles__Elemento{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.Principal__Imagen2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Principal__Imagen2 > img{
+    width: 600px;
+    height: 400px;
+}
+
+.Principal__Descripcion2{
+    padding: 50px 50px 0 0;
+}
+
+.Principal__Descripcion2 > p{
+    text-align: justify;
+}
+
+#Carrusel{
+    width: 100%;
+}
+
+.Carrusel__Imagenes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+}
+
+.Carrusel__Imagenes > img{
+    width: 25%;
+    height: 100%;
+}
