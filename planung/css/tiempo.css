@@ -44,7 +44,11 @@ nav{
 }
 
 #Principal > aside{
+    position: sticky;
+    top: 100px;
+    overflow-y: auto;
     width: 20%;
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     padding: 10px 10px 30px 10px;
