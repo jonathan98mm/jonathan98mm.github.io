@@ -41,6 +41,13 @@ nav{
     align-items: center;
     justify-content: center;
     font-size: 50px;
+    transition: all 0.15s linear;
+    z-index: 2;
+}
+
+.Navbar__Active {
+    background-color: white;
+    box-shadow: 0 0 10px gray;
 }
 
 #Principal > aside{
@@ -56,8 +63,33 @@ nav{
 }
 
 .Principal__Linea{
+    position: relative;
     padding: 20px 10px 0 20px;
     text-align: start;
+    line-height: 16px;
+}
+
+.Principal__Linea::before {
+    position: absolute;
+    left: 6px;
+    top: 20px;
+    content: "";
+    display: block;
+    z-index: 2;
+    height: 860px;
+    width: 2px;
+    background-color: black;
+}
+
+.Linea__Lista > li::marker {
+    content: "• ";
+    font-size: 30px;
+    padding-inline: 0;
+    margin-inline: 0;
+}
+
+.Linea__Lista a:hover {
+    color: gray;
 }
 
 #Principal > main{
