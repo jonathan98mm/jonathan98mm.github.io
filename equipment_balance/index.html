@@ -261,42 +261,36 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="bg-white rounded p-5">
-                        <form>
+                        <form id="contactForm" method="post">
                             <div class="row g-3">
                                 <div class="col-sm-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="gname" placeholder="Gurdian Name" />
-                                        <label for="gname">Tu nombre</label>
+                                        <input name="cname" type="text" class="form-control" id="cname" placeholder="Gurdian Name" />
+                                        <label for="cname">Tu nombre</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="gmail"
+                                        <input name="cemail" type="email" class="form-control" id="cemail"
                                             placeholder="Gurdian Email" />
                                         <label for="gmail">Tu correo</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="cname" placeholder="Child Name" />
-                                        <label for="cname">Tu telefono</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="cage" placeholder="Child Age" />
-                                        <label for="cage">Tipo de servicio</label>
+                                        <input name="cphone" type="text" class="form-control" id="cphone" placeholder="Child Name" />
+                                        <label for="cphone">Tu telefono</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                        <textarea name="cmessage" class="form-control" placeholder="Leave a message here" id="cmessage"
                                             style="height: 80px"></textarea>
                                         <label for="message">Mensaje</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary py-3 px-5" type="submit">
+                                    <button id="csubmit" class="btn btn-primary py-3 px-5" type="submit">
                                         ¡Contáctanos!
                                     </button>
                                 </div>

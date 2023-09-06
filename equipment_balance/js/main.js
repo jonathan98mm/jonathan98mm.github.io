@@ -1,87 +1,117 @@
 (function ($) {
-    "use strict";
+  "use strict";
 
-    var docReady = function docReady(fn) {
-        // see if DOM is already available
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', fn);
-        } else {
-            setTimeout(fn, 1);
-        }
-    };
+  var docReady = function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", fn);
+    } else {
+      setTimeout(fn, 1);
+    }
+  };
 
-    var cursorInit = function cursorInit() {
-        var cursor = document.querySelector('.cursor-outer');
-        var targets = document.querySelectorAll(['a', '.btn', "[type='button']", 'input', 'textarea']);
-        document.addEventListener('mousemove', function (e) {
-            cursor.style.transform = "translate3d(calc(".concat(e.clientX, "px - 50%), calc(").concat(e.clientY, "px - 50%), 0)");
-        });
-        targets.forEach(function (item) {
-            item.addEventListener('mouseover', function () {
-                cursor.classList.add('link-hover');
-            });
-            item.addEventListener('mouseleave', function () {
-                cursor.classList.remove('link-hover');
-            });
-        });
-    };
-
-    docReady(cursorInit);
-
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, );
-    };
-    spinner();
-    
-    // Initiate the wowjs
-    new WOW().init();
-
-    // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');
-        } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
-        }
+  var cursorInit = function cursorInit() {
+    var cursor = document.querySelector(".cursor-outer");
+    var targets = document.querySelectorAll([
+      "a",
+      ".btn",
+      "[type='button']",
+      "input",
+      "textarea",
+    ]);
+    document.addEventListener("mousemove", function (e) {
+      cursor.style.transform = "translate3d(calc("
+        .concat(e.clientX, "px - 50%), calc(")
+        .concat(e.clientY, "px - 50%), 0)");
     });
-    
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
+    targets.forEach(function (item) {
+      item.addEventListener("mouseover", function () {
+        cursor.classList.add("link-hover");
+      });
+      item.addEventListener("mouseleave", function () {
+        cursor.classList.remove("link-hover");
+      });
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
+  };
+
+  docReady(cursorInit);
+
+  // Spinner
+  var spinner = function () {
+    setTimeout(function () {
+      if ($("#spinner").length > 0) {
+        $("#spinner").removeClass("show");
+      }
+    });
+  };
+  spinner();
+
+  // Initiate the wowjs
+  new WOW().init();
+
+  // Sticky Navbar
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      $(".sticky-top").addClass("shadow-sm").css("top", "0px");
+    } else {
+      $(".sticky-top").removeClass("shadow-sm").css("top", "-100px");
+    }
+  });
+
+  // Back to top button
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      $(".back-to-top").fadeIn("slow");
+    } else {
+      $(".back-to-top").fadeOut("slow");
+    }
+  });
+  $(".back-to-top").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
+    return false;
+  });
+
+  // Facts counter
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 2000,
+  });
+
+  // Testimonials carousel
+  $(".testimonial-carousel").owlCarousel({
+    autoplay: true,
+    smartSpeed: 1000,
+    items: 1,
+    dots: false,
+    loop: true,
+    nav: true,
+    navText: [
+      '<i class="bi bi-chevron-left"></i>',
+      '<i class="bi bi-chevron-right"></i>',
+    ],
+  });
+
+  $("#csubmit").click(function (event) {
+    let form = $("#contactForm");
+
+    $.ajax({
+      url: "mails.php",
+      method: "POST",
+      data: form.serialize(),
+      success: function (data) {
+        console.log(data);
+      },
+      error: function (error) {
+        console.log(error);
+      },
     });
 
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
+    $("#contactForm").trigger("reset");
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        items: 1,
-        dots: false,
-        loop: true,
-        nav: true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
+    Swal.fire({
+      title: "¡Exito!",
+      text: "Gracias por contactarnos, nos pondremos en contacto contigo",
+      icon: "success",
     });
-    
+  });
 })(jQuery);
-
