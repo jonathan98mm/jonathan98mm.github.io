@@ -92,6 +92,8 @@
   });
 
   $("#csubmit").click(function (event) {
+    event.preventDefault();
+    
     let form = $("#contactForm");
 
     $.ajax({
