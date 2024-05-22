@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css" />
+
+    <title>Inmobidal</title>
+</head>
+
+<body>
+    <!-- Inicia Área del Header -->
+    <header class="header_area sticky-header">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light main_box">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo-h" href="#"><img src="images/LOGO INMOBIDAL.png" alt="" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Nosotros">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Proyectos">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Recomendaciones">Recomendaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contacto">Contacto</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item">
+                                <a href="#" class="cart"><span class="ti-bag"></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="search">
+                                    <span class="lnr lnr-magnifier" id="search"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="search_input" id="search_input_box">
+            <div class="container">
+                <form class="d-flex justify-content-between">
+                    <input type="text" class="form-control" id="search_input" placeholder="Search Here" />
+                    <button type="submit" class="btn"></button>
+                    <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- Fin del Área del Header -->
+
+    <div class="hero">
+        <div class="hero-slide">
+            <div class="img overlay" style="background-image: url('images/hero_bg_3.jpg')"></div>
+            <div class="img overlay" style="background-image: url('images/hero_bg_2.jpg')"></div>
+            <div class="img overlay" style="background-image: url('images/hero_bg_1.jpg')"></div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-9 text-center">
+                    <h1 class="heading" data-aos="fade-up">
+                        La manera más fácil de encontrar tu casa soñada
+                    </h1>
+                    <form action="#" class="narrow-w form-search d-flex align-items-stretch mb-3" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <input type="text" class="form-control px-4"
+                            placeholder="Tu código postal o ciudad, ejemplo Ciudad de México" />
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Nosotros" class="section section-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-5">
+                    <h2 class="font-weight-bold heading text-primary mb-4">NOSOTROS</h2>
+                    <p style="font-size: 15px; line-height: 2;">
+                        Fundada en
+                        <span style="font-family: 'Work Sans', sans-serif; font-weight: 550">2022</span>. INMOBIDAL
+                        nació de la visión de un grupo de profesionales
+                        apasionados por conectar a las personas con sus lugares ideales
+                        para vivir y trabajar. Durante estos años, nos hemos consolidado
+                        como una gran empresa, Destacándonos por nuestro compromiso con la
+                        integridad, la transparencia y el servicio personalizado.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-between mb-5">
+                <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
+                    <div class="img-about dots">
+                        <img src="images/hero_bg_3.jpg" alt="Image" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h2 style="margin-bottom: 50px">SERVICIOS</h2>
+                    <div class="d-flex feature-h">
+                        <span class="wrap-icon me-3">
+                            <span class="fa-solid fa-dollar-sign"></span>
+                        </span>
+                        <div class="feature-text">Venta de propiedades</div>
+                    </div>
+
+                    <div class="d-flex feature-h">
+                        <span class="wrap-icon me-3">
+                            <span class="fa-solid fa-building-circle-check"></span>
+                        </span>
+                        <div class="feature-text">Alquiler de propiedades</div>
+                    </div>
+
+                    <div class="d-flex feature-h">
+                        <span class="wrap-icon me-3">
+                            <span class="fa-solid fa-building-shield"></span>
+                        </span>
+                        <div class="feature-text">Gestión de propiedades</div>
+                    </div>
+
+                    <div class="d-flex feature-h">
+                        <span class="wrap-icon me-3">
+                            <span class="fa-solid fa-user-tie"></span>
+                        </span>
+                        <div class="feature-text">Asesoría legal y fiscal</div>
+                    </div>
+
+                    <div class="d-flex feature-h">
+                        <span class="wrap-icon me-3">
+                            <span class="fa-solid fa-file-lines"></span>
+                        </span>
+                        <div class="feature-text">Tasaciones</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between mt-5">
+                <div class="d-flex feature-h">
+                    <span class="wrap-icon me-3">
+                        <span class="icon-person"></span>
+                    </span>
+                    <div class="feature-text">
+                        <h3 class="heading">MISIÓN</h3>
+                        <p class="text-black-50">
+                            Atender con excelencia las necesidades habitacionales de
+                            nuestros clientes, ofreciendo propiedades que se ajusten a sus
+                            sueños y posibilidades, con un servicio personalizado,
+                            transparente y eficiente. Nos comprometemos a ser una guía en el
+                            camino hacia la adquisición de su hogar ideal, f ortaleciendo la
+                            confianza a través de cada transacción.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex feature-h">
+                    <span class="wrap-icon me-3">
+                        <span class="icon-security"></span>
+                    </span>
+                    <div class="feature-text">
+                        <h3 class="heading">VISIÓN</h3>
+                        <p class="text-black-50">
+                            Ser la inmobiliaria de referencia en la región, reconocida por
+                            nuestra integridad, innovación y compromiso con la comunidad.
+                            Aspiramos a liderar el mercado a través de soluciones
+                            habitacionales que marquen tendencia, y ser el aliado preferido
+                            de quienes buscan un hogar o una inversión inmobiliaria.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Proyectos" class="section">
+        <div class="container">
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="font-weight-bold text-primary heading">Proyectos</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="property-slider-wrap">
+                        <div class="property-slider">
+                            <div class="property-item">
+                                <a href="property-single.html" class="img">
+                                    <img src="images/Propiedad1.png" alt="Image" class="img-fluid" />
+                                </a>
+
+                                <div class="property-content">
+                                    <div class="price mb-2">
+                                        <span style="font-family: 'Work Sans', sans-serif">$1,291,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50"><span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">5232</span>
+                                            California Fake, Ave.
+                                            <span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">21</span>BC</span>
+                                        <span class="city d-block mb-3">California, USA</span>
+
+                                        <div class="specs d-flex mb-4">
+                                            <span class="d-block d-flex align-items-center me-3">
+                                                <span class="fa-solid fa-door-open me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">3</span>
+                                                    habitaciones</span>
+                                            </span>
+                                            <span class="d-block d-flex align-items-center">
+                                                <span class="fa-solid fa-toilet me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2<sup>1&frasl;2</sup></span>
+                                                    baños</span>
+                                            </span>
+                                        </div>
+
+                                        <a href="property-single.html" class="btn btn-primary py-2 px-3">Ver
+                                            detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="property-item">
+                                <a href="property-single.html" class="img">
+                                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                                </a>
+
+                                <div class="property-content">
+                                    <div class="price mb-2">
+                                        <span style="font-family: 'Work Sans', sans-serif">$1,291,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50"><span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">5232</span>
+                                            California Fake, Ave.
+                                            <span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">21</span>BC</span>
+                                        <span class="city d-block mb-3">California, USA</span>
+
+                                        <div class="specs d-flex mb-4">
+                                            <span class="d-block d-flex align-items-center me-3">
+                                                <span class="icon-bed me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    beds</span>
+                                            </span>
+                                            <span class="d-block d-flex align-items-center">
+                                                <span class="icon-bath me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    baths</span>
+                                            </span>
+                                        </div>
+
+                                        <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="property-item">
+                                <a href="property-single.html" class="img">
+                                    <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+                                </a>
+
+                                <div class="property-content">
+                                    <div class="price mb-2">
+                                        <span style="font-family: 'Work Sans', sans-serif">$1,291,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50"><span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">5232</span>
+                                            California Fake, Ave.
+                                            <span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">21</span>BC</span>
+                                        <span class="city d-block mb-3">California, USA</span>
+
+                                        <div class="specs d-flex mb-4">
+                                            <span class="d-block d-flex align-items-center me-3">
+                                                <span class="icon-bed me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    beds</span>
+                                            </span>
+                                            <span class="d-block d-flex align-items-center">
+                                                <span class="icon-bath me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    baths</span>
+                                            </span>
+                                        </div>
+
+                                        <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="property-item">
+                                <a href="property-single.html" class="img">
+                                    <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
+                                </a>
+
+                                <div class="property-content">
+                                    <div class="price mb-2">
+                                        <span style="font-family: 'Work Sans', sans-serif">$1,291,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50"><span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">5232</span>
+                                            California Fake, Ave.
+                                            <span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">21</span>BC</span>
+                                        <span class="city d-block mb-3">California, USA</span>
+
+                                        <div class="specs d-flex mb-4">
+                                            <span class="d-block d-flex align-items-center me-3">
+                                                <span class="icon-bed me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    beds</span>
+                                            </span>
+                                            <span class="d-block d-flex align-items-center">
+                                                <span class="icon-bath me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    baths</span>
+                                            </span>
+                                        </div>
+
+                                        <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="property-item">
+                                <a href="property-single.html" class="img">
+                                    <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
+                                </a>
+
+                                <div class="property-content">
+                                    <div class="price mb-2">
+                                        <span style="font-family: 'Work Sans', sans-serif">$1,291,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50"><span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">5232</span>
+                                            California Fake, Ave.
+                                            <span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">21</span>BC</span>
+                                        <span class="city d-block mb-3">California, USA</span>
+
+                                        <div class="specs d-flex mb-4">
+                                            <span class="d-block d-flex align-items-center me-3">
+                                                <span class="icon-bed me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    beds</span>
+                                            </span>
+                                            <span class="d-block d-flex align-items-center">
+                                                <span class="icon-bath me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    baths</span>
+                                            </span>
+                                        </div>
+
+                                        <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="property-item">
+                                <a href="property-single.html" class="img">
+                                    <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
+                                </a>
+
+                                <div class="property-content">
+                                    <div class="price mb-2">
+                                        <span style="font-family: 'Work Sans', sans-serif">$1,291,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50"><span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">5232</span>
+                                            California Fake, Ave.
+                                            <span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">21</span>BC</span>
+                                        <span class="city d-block mb-3">California, USA</span>
+
+                                        <div class="specs d-flex mb-4">
+                                            <span class="d-block d-flex align-items-center me-3">
+                                                <span class="icon-bed me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    beds</span>
+                                            </span>
+                                            <span class="d-block d-flex align-items-center">
+                                                <span class="icon-bath me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    baths</span>
+                                            </span>
+                                        </div>
+
+                                        <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="property-item">
+                                <a href="property-single.html" class="img">
+                                    <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
+                                </a>
+
+                                <div class="property-content">
+                                    <div class="price mb-2">
+                                        <span style="font-family: 'Work Sans', sans-serif">$1,291,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50"><span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">5232</span>
+                                            California Fake, Ave.
+                                            <span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">21</span>BC</span>
+                                        <span class="city d-block mb-3">California, USA</span>
+
+                                        <div class="specs d-flex mb-4">
+                                            <span class="d-block d-flex align-items-center me-3">
+                                                <span class="icon-bed me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    beds</span>
+                                            </span>
+                                            <span class="d-block d-flex align-items-center">
+                                                <span class="icon-bath me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    baths</span>
+                                            </span>
+                                        </div>
+
+                                        <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="property-item">
+                                <a href="property-single.html" class="img">
+                                    <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
+                                </a>
+
+                                <div class="property-content">
+                                    <div class="price mb-2">
+                                        <span style="font-family: 'Work Sans', sans-serif">$1,291,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50"><span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">5232</span>
+                                            California Fake, Ave.
+                                            <span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">21</span>BC</span>
+                                        <span class="city d-block mb-3">California, USA</span>
+
+                                        <div class="specs d-flex mb-4">
+                                            <span class="d-block d-flex align-items-center me-3">
+                                                <span class="icon-bed me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    beds</span>
+                                            </span>
+                                            <span class="d-block d-flex align-items-center">
+                                                <span class="icon-bath me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    baths</span>
+                                            </span>
+                                        </div>
+
+                                        <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+
+                            <div class="property-item">
+                                <a href="property-single.html" class="img">
+                                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                                </a>
+
+                                <div class="property-content">
+                                    <div class="price mb-2">
+                                        <span style="font-family: 'Work Sans', sans-serif">$1,291,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50"><span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">5232</span>
+                                            California Fake, Ave.
+                                            <span style="
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 550;
+                          ">21</span>BC</span>
+                                        <span class="city d-block mb-3">California, USA</span>
+
+                                        <div class="specs d-flex mb-4">
+                                            <span class="d-block d-flex align-items-center me-3">
+                                                <span class="icon-bed me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    beds</span>
+                                            </span>
+                                            <span class="d-block d-flex align-items-center">
+                                                <span class="icon-bath me-2"></span>
+                                                <span class="caption"><span style="
+                                font-family: 'Work Sans', sans-serif;
+                                font-weight: 550;
+                              ">2</span>
+                                                    baths</span>
+                                            </span>
+                                        </div>
+
+                                        <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .item -->
+                        </div>
+
+                        <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
+                            <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Prev</span>
+                            <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Next</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Recomendaciones" class="section sec-testimonials bg-light">
+        <div class="container">
+            <div class="row mb-5 align-items-center">
+                <div class="col-md-6">
+                    <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
+                        Recomendaciones
+                    </h2>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div id="testimonial-nav">
+                        <span class="prev" data-controls="prev">Prev</span>
+
+                        <span class="next" data-controls="next">Next</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4"></div>
+            </div>
+            <div class="testimonial-slider-wrap">
+                <div class="testimonial-slider">
+                    <div class="item">
+                        <div class="testimonial">
+                            <img src="images/person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
+                            <div class="rate">
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-regular fa-star text-warning"></span>
+                                <span class="fa-regular fa-star text-warning"></span>
+                                <span class="fa-regular fa-star text-warning"></span>
+                                <span class="fa-regular fa-star text-warning"></span>
+                            </div>
+                            <h3 class="h5 text-primary mb-4">Laura Martínez</h3>
+                            <blockquote>
+                                <p>
+                                    "La experiencia con Inmobidal ha sido excepcional. Desde el primer contacto hasta la entrega final, demostraron
+                                    profesionalismo y dedicación. Recomiendo encarecidamente sus servicios a cualquiera que busque calidad y atención al
+                                    detalle."
+                                </p>
+                            </blockquote>
+                            <p class="text-black-50">Arquitecta, Cliente Satisfecha</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="testimonial">
+                            <img src="images/person_2-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
+                            <div class="rate">
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                            </div>
+                            <h3 class="h5 text-primary mb-4">Juan Pérez</h3>
+                            <blockquote>
+                                <p>
+                                    "Trabajar con Inmobidal fue un verdadero placer. Su equipo está altamente capacitado y siempre dispuesto a resolver
+                                    cualquier inconveniente. Los resultados superaron mis expectativas en todos los aspectos."
+                                </p>
+                            </blockquote>
+                            <p class="text-black-50">Ingeniero Civil, Colaborador</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="testimonial">
+                            <img src="images/person_3-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
+                            <div class="rate">
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                            </div>
+                            <h3 class="h5 text-primary mb-4">Ana González</h3>
+                            <blockquote>
+                                <p>
+                                    "Inmobidal es sinónimo de excelencia. La pasión y el compromiso que ponen en cada proyecto son evidentes. Estoy muy
+                                    contenta con el resultado final y sin duda volveré a contar con ellos en el futuro."
+                                </p>
+                            </blockquote>
+                            <p class="text-black-50">Diseñadora de Interiores, Cliente Satisfecha</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="testimonial">
+                            <img src="images/person_4-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
+                            <div class="rate">
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                            </div>
+                            <h3 class="h5 text-primary mb-4">Carlos Rodríguez</h3>
+                            <blockquote>
+                                <p>
+                                    "Desde el primer momento supe que Inmobidal era la elección correcta. Su equipo es muy profesional y su enfoque en la
+                                    innovación y calidad es impresionante. Sin duda, recomendaría sus servicios a todos."
+                                </p>
+                            </blockquote>
+                            <p class="text-black-50">Desarrollador Inmobiliario, Socio Comercial</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="testimonial">
+                            <img src="images/person_3-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
+                            <div class="rate">
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                                <span class="fa-solid fa-star text-warning"></span>
+                            </div>
+                            <h3 class="h5 text-primary mb-4">María López</h3>
+                            <blockquote>
+                                <p>
+                                    "La atención personalizada y el enfoque detallado de Inmobidal son inigualables. El proceso fue fluido y sin
+                                    complicaciones, y el producto final fue exactamente lo que había imaginado. ¡Altamente recomendados!"
+                                </p>
+                            </blockquote>
+                            <p class="text-black-50">Empresaria, Cliente Satisfecha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tour Booking Start -->
+    <div id="Contacto" class="container-fluid booking py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="text-white mb-4">Contacto</h1>
+                    <p class="text-white mb-4">
+                        Contactános para recibir más información
+                    </p>
+                    <a href="#"
+                        class="booking-btn booking-btn-light text-primary rounded-pill py-3 px-5 mt-2">Contacto</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-white mb-3">Obtén más información</h1>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="booking-form-control bg-white border-0" id="name"
+                                        placeholder="Nombre" />
+                                    <label for="name">Nombre</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="booking-form-control bg-white border-0" id="email"
+                                        placeholder="Correo Electrónico" />
+                                    <label for="email">Correo Electrónico</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="booking-form-control bg-white border-0"
+                                        placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                    <label for="message">Mensaje</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="booking-btn booking-btn-primary text-white w-100 py-3" type="submit">
+                                    Enviar Correo
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tour Booking End -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer-section">
+        <div class="container relative">
+            <div class="sofa-img">
+                <img src="images/sofa.png" alt="Image" class="img-fluid" />
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="subscription-form">
+                        <h3 class="d-flex align-items-center">
+                            <span class="me-1"><img src="images/envelope-outline.svg" alt="Image"
+                                    class="img-fluid" /></span><span>Recibe información</span>
+                        </h3>
+                        <form action="#" class="row g-3">
+                            <div class="col-auto">
+                                <input type="email" class="form-control" placeholder="Ingresa tu correo" />
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-primary">
+                                    <span class="fa-regular fa-envelope"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="mb-4 footer-logo-wrap">
+                        <a href="#" class="footer-logo"><img src="images/LOGO INMOBIDAL.png" alt="" /></a>
+                    </div>
+                    <p style="font-size: 14px;" class="mb-4">
+                        Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
+                        quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                        vulputate velit imperdiet dolor tempor tristique. Pellentesque
+                        habitant
+                    </p>
+
+                    <ul class="list-unstyled custom-social">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row links-wrap">
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul style="font-size: 14px;" class="list-unstyled">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul style="font-size: 14px;" class="list-unstyled">
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Knowledge base</a></li>
+                                <li><a href="#">Live chat</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul style="font-size: 14px;" class="list-unstyled">
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Our team</a></li>
+                                <li><a href="#">Leadership</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul style="font-size: 14px;" class="list-unstyled">
+                                <li><a href="#">Nordic Chair</a></li>
+                                <li><a href="#">Kruzo Aero</a></li>
+                                <li><a href="#">Ergonomic Chair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top copyright">
+                <div class="row pt-4">
+                    <div class="col-lg-6">
+                        <p class="mb-2 text-center text-lg-start">
+                            Copyright <i class="fa-regular fa-copyright"></i>
+                            <span style="font-family: 'Work Sans', sans-serif; font-weight: 550">
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                            </span>. All Rights Reserved. &mdash; Inmobidal
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
